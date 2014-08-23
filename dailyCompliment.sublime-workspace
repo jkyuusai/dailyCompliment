@@ -1,0 +1,397 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"subscr",
+				"subscribe(name, arg1?, arg2?, ars3?, arg4?, callbacks?)"
+			],
+			[
+				"to",
+				"toArray(obj)"
+			],
+			[
+				"rend",
+				"renderList(observable, docFunc, elseFunc?)"
+			],
+			[
+				"Met",
+				"Meteor.call	Meteor.call(name, param1, param2, ... [, asyncCallback])"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"Snippet: temp",
+				"Snippet: Meteor Template Tag"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/joshua/software/repositories/dailyCompliment"
+	],
+	"file_history":
+	[
+		"/home/joshua/software/repositories/microscope/client/main.html",
+		"/home/joshua/software/repositories/wheelOfFeels/wheel.html",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/schedule.js",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/schedule.html",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/discussionItem.html",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/discussionItem.js",
+		"/home/joshua/software/repositories/json_resume/joshua_skinner_resume.json",
+		"/home/joshua/software/repositories/json_resume/lib/index.js",
+		"/home/joshua/software/repositories/json_resume/build.js",
+		"/home/joshua/software/repositories/schedule/lib/permissions.js",
+		"/home/joshua/software/repositories/schedule/collections/discussions.js",
+		"/home/joshua/software/repositories/schedule/collections/sections.js",
+		"/home/joshua/software/repositories/schedule/client/views/application/layout.html",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/section.html",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/section.js",
+		"/home/joshua/software/repositories/schedule/client/main.js",
+		"/home/joshua/software/repositories/schedule/client/views/includes/header.html",
+		"/home/joshua/software/repositories/schedule/lib/router.js",
+		"/home/joshua/software/repositories/microscope/client/views/posts/posts_list.js",
+		"/home/joshua/software/repositories/microscope/client/views/posts/posts_list.html",
+		"/home/joshua/software/repositories/microscope/client/views/posts/post_page.html",
+		"/home/joshua/software/repositories/microscope/server/fixtures.js",
+		"/home/joshua/software/repositories/microscope/client/views/posts/post_item.js",
+		"/home/joshua/software/repositories/microscope/client/views/posts/post_item.html",
+		"/home/joshua/software/repositories/microscope/lib/router.js",
+		"/home/joshua/software/repositories/microscope/collections/posts.js",
+		"/home/joshua/software/repositories/microscope/lib/permissions.js",
+		"/home/joshua/software/repositories/microscope/server/publications.js",
+		"/home/joshua/software/repositories/question",
+		"/home/joshua/software/repositories/schedule/server/publications.js",
+		"/home/joshua/software/repositories/schedule/client/main.html",
+		"/home/joshua/software/repositories/schedule/.meteor/packages",
+		"/home/joshua/software/repositories/schedule/packages/accounts-ui-bootstrap-3/login_buttons.html",
+		"/home/joshua/software/repositories/schedule/packages/accounts-ui-bootstrap-3/.build/browser/packages/accounts-ui-bootstrap-3.js",
+		"/home/joshua/software/repositories/schedule/packages/autoform/utility.js",
+		"/home/joshua/software/repositories/schedule/lib/helper.js",
+		"/home/joshua/software/repositories/schedule/server/fixtures.js",
+		"/home/joshua/software/repositories/schedule/packages/blaze-layout/layout.js",
+		"/home/joshua/software/repositories/schedule/.meteor/release",
+		"/home/joshua/.config/sublime-text-3/Packages/User/method.sublime-snippet",
+		"/home/joshua/.config/sublime-text-3/Packages/User/consolelog.sublime-snippet",
+		"/home/joshua/software/repositories/schedule/untitled.sublime-project",
+		"/home/joshua/software/repositories/microscope/client/views/includes/header.html",
+		"/home/joshua/software/repositories/schedule/client/views/includes/loading.html",
+		"/home/joshua/software/repositories/schedule/.meteor/local/build/programs/client/app/client/views/includes/template.header.js",
+		"/home/joshua/software/repositories/microscope/client/views/posts/post_submit.js",
+		"/home/joshua/software/repositories/microscope/client/views/posts/post_submit.html",
+		"/home/joshua/software/repositories/schedule/packages/moment/lib/moment/test/moment/sod_eod.js",
+		"/home/joshua/software/repositories/schedule/client/stylesheets/style.css",
+		"/home/joshua/software/repositories/schedule/packages/iron-router/.build/npm/node_modules/connect/lib/middleware/cookieSession.js",
+		"/home/joshua/software/repositories/schedule/packages/iron-router/CONTRIBUTING.md",
+		"/home/joshua/software/repositories/schedule/packages/blaze-layout/overrides.js",
+		"/home/joshua/software/repositories/schedule/packages/accounts-ui-bootstrap-dropdown/.build/browser.json",
+		"/home/joshua/software/repositories/schedule/packages/accounts-ui-bootstrap-dropdown/login_buttons_dropdown.html",
+		"/home/joshua/software/repositories/schedule/packages/accounts-ui-bootstrap-dropdown/login_buttons_dropdown.js",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/discussionItem",
+		"/home/joshua/software/repositories/schedule/packages/iron-router/.build/npm/node_modules/connect/lib/middleware/staticCache.js",
+		"/home/joshua/software/repositories/schedule/packages/iron-router/.build/npm/node_modules/connect/node_modules/multiparty/test/standalone/test-content-transfer-encoding.js",
+		"/home/joshua/software/repositories/schedule/packages/iron-router/.build/npm/node_modules/connect/node_modules/multiparty/test/fixture/js/encoding.js",
+		"/home/joshua/software/repositories/schedule/smart.json",
+		"/home/joshua/software/repositories/schedule/client/views/schedule/full_schedule.html",
+		"/home/joshua/software/repositories/schedule/collections/sessions.js",
+		"/home/joshua/software/repositories/microscope/client/views/application/layout.html",
+		"/home/joshua/software/repositories/microscope/client/views/includes/loading.html",
+		"/home/joshua/software/repositories/microscope/client/views/application/layout.js",
+		"/home/joshua/software/repositories/microscope/client/helpers/config.js",
+		"/home/joshua/software/repositories/microscope/client/stylesheets/style.css",
+		"/home/joshua/software/repositories/microscope/client/main.js",
+		"/home/joshua/software/repositories/schedule/schedule.html",
+		"/home/joshua/software/repositories/schedule/schedule.js",
+		"/home/joshua/software/repositories/schedule/schedule.css",
+		"/home/joshua/.config/sublime-text-3/Installed Packages/meteor.js",
+		"/home/joshua/software/repositories/schedule/client/views/application/layout.js",
+		"/home/joshua/software/repositories/microscope/untitled.sublime-project",
+		"/home/joshua/.config/sublime-text-3/Packages/TernJS/TernJS.sublime-settings",
+		"/home/joshua/software/repositories/microscope/packages/blaze-layout/layout.js",
+		"/home/joshua/software/repositories/microscope/packages/blaze-layout/LICENSE.txt",
+		"/home/joshua/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/joshua/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/joshua/.config/i3/config",
+		"/home/joshua/.config/i3status/config",
+		"/home/joshua/software/repositories/microscope/main.js",
+		"/home/joshua/software/repositories/microscope/main.html",
+		"/home/joshua/software/repositories/microscope/.meteor/local/build/programs/ctl/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/integration/test-data-size.js",
+		"/home/joshua/software/repositories/microscope/.meteor/local/build/programs/server/packages/standard-app-packages.js",
+		"/home/joshua/software/repositories/microscope/.meteor/local/build/programs/ctl/node_modules/source-map/test/source-map/test-dog-fooding.js",
+		"/home/joshua/software/repositories/microscope/.meteor/packages",
+		"/home/joshua/i3lockdebug",
+		"/home/joshua/microscope/client/stylesheets/style.css",
+		"/home/joshua/.pam_environment",
+		"/home/joshua/.profile",
+		"/home/joshua/npm-debug.log",
+		"/home/joshua/.bashrc",
+		"/etc/ssh/sshd_config",
+		"/home/joshua/.ssh/authorized_keys",
+		"/home/joshua/.screenlayout/screen.sh",
+		"/home/joshua/nautilus"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/joshua/software/repositories/schedule, -/home/joshua/software/repositories/schedule/.meteor/*, -/home/joshua/software/repositories/schedule/packages/*",
+			"/home/joshua/software/repositories/schedule, -/home/joshua/software/repositories/schedule/.meteor/*, -/home/joshua/software/repositories/schedule/.packages/*",
+			"/home/joshua/software/repositories/schedule, -/home/joshua/software/repositories/schedule/.meteor/*, -/home/joshua/software/repositories/schedule/.node_modules/*",
+			"/home/joshua/software/repositories/schedule, -/home/joshua/software/repositories/schedule/.meteor/*",
+			"/home/joshua/software/repositories/schedule, -/home/joshua/software/repositories/schedule/.meteor",
+			"/home/joshua/software/repositories/schedule, -'/home/joshua/software/repositories/schedule/.meteor'",
+			"/home/joshua/software/repositories/schedule, -'/.meteor/'",
+			"/home/joshua/software/repositories/schedule, -'.meteor/'",
+			"/home/joshua/software/repositories/schedule, -'.meteor/**'",
+			"/home/joshua/software/repositories/schedule -'.meteor/**'",
+			"/home/joshua/software/repositories/schedule",
+			"/home/joshua/software/repositories/microscope",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"publish",
+			"title",
+			"fullschedule",
+			"navbar",
+			"style.css",
+			"style",
+			"progress",
+			"scroll",
+			"postsdata",
+			"sound",
+			"HDMI-0",
+			"DVI-1",
+			"DVI-0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$d3",
+			"$d2",
+			"$d1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "dailyCompliment.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"schedu",
+				"client/views/schedule/schedule.js"
+			],
+			[
+				"route",
+				"lib/router.js"
+			],
+			[
+				"main",
+				"client/main.js"
+			],
+			[
+				"publ",
+				"server/publications.js"
+			],
+			[
+				"perm",
+				"lib/permissions.js"
+			],
+			[
+				"disc",
+				"collections/discussions.js"
+			],
+			[
+				"help",
+				"lib/helper.js"
+			],
+			[
+				"fixt",
+				"server/fixtures.js"
+			],
+			[
+				"lay",
+				"client/views/application/layout.html"
+			],
+			[
+				"router",
+				"lib/router.js"
+			],
+			[
+				"discu",
+				"collections/discussions.js"
+			],
+			[
+				"discuss",
+				"collections/discussions.js"
+			],
+			[
+				"schedule",
+				"client/views/schedule/discussionItem.js"
+			],
+			[
+				"css",
+				"client/stylesheets/style.css"
+			],
+			[
+				"sched",
+				"client/views/schedule/schedule.html"
+			],
+			[
+				"di",
+				"collections/discussions.js"
+			],
+			[
+				"layout",
+				"client/views/application/layout.js"
+			],
+			[
+				"layoutj",
+				"packages/blaze-layout/layout.js"
+			],
+			[
+				"main.",
+				"client/main.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
