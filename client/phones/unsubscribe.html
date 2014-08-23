@@ -1,0 +1,9 @@
+<template name="unsubscribe">
+	{{#if unsubscribed}}
+		<div>You've been unsubscribed from the Daily Compliment.</div>
+	{{else}}
+		<div>This number has an active Daily Compliment subscription. Would you like to unsubscribe?</div>
+		<input type="button" value="Unsubscribe" class="btn btn-primary btn-lg submit"/>
+		<input type="button" value="Cancel" class="btn btn-default btn-lg cancel"/>
+	{{/if}}
+</template>

@@ -1,0 +1,21 @@
+<template name="subscribe">
+    <form role="form">
+        <div class="form-group">       
+            <label for="phone">Phone Number</label>
+            <input class="form-control" name="phone" type="tel" placeholder="(123)098-4568" required />
+        </div>
+        <div class="form-group">
+            <label for="carrier">Carrier</label>
+            <input class="form-control" name="carrier" type="text" placeholder="T-Mobile" required list="carriers"/>
+        </div>
+       
+        <datalist id="carriers">
+            <option value="AT&T"></option>
+            <option value="Verizon"></option>
+            <option value="TMobile"></option>
+            <option value="Sprint"></option>
+        </datalist>
+
+        <input type="submit" value="Submit" class="btn btn-primary btn-lg"/>          
+      </form>
+</template> 

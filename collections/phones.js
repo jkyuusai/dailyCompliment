@@ -1,8 +1,5 @@
 Phones = new Meteor.Collection('phones');
-Phones.allow({
-	update: ownsDocument,
-	remove: ownsDocument
-});
+
 
 Meteor.methods({
   phone: function(phoneAttributes) {
@@ -19,9 +16,7 @@ Meteor.methods({
 
     // check that there are no previous phones with the same number
     if (phoneAttributes.number && phoneWithSameNumber) {
-      throw new Meteor.Error(302, 
-        'This phone number has already been registered', 
-        phoneWithSameNumber._id);
+      throw new Meteor.Error(302,'' ,phoneWithSameNumber._id);
     }
 
     // pick out the whitelisted keys
