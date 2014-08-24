@@ -15,7 +15,7 @@ Template.subscribe.events({
           }        
         alert(error.reason);
       } else {
-        Meteor.call('sendEmail', Subscriptions.findOne(id));
+        Meteor.call('sendEmail', Subscriptions.findOne(id),'Daily Compliment Registration', 'You have been registered for the Daily Compliment.');
         Router.go('finished');
       }
     });     
