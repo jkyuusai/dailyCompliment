@@ -1,10 +1,9 @@
 {
   "packages": {
     "bootstrap-3": {},
+    "iron-router": {},
+    "spin": {},
     "accounts-ui-bootstrap-3": {},
-    "iron-router": {
-      "version": "0.8.2"
-    },
-    "spin": {}
+    "kadira": {}
   }
 }

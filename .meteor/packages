@@ -5,8 +5,10 @@
 
 standard-app-packages
 autopublish
+insecure
 bootstrap-3
-accounts-ui-bootstrap-3
-spin
 iron-router
+spin
 email
+accounts-ui-bootstrap-3
+kadira
