@@ -2,12 +2,11 @@ Template.subscribe.events({
   'submit form': function(e) {
     e.preventDefault();
     Session.set('unsubscribed', false);
-    var phone = {
-      number: $(e.target).find('[name=phone]').val(),
-      carrier:  $(e.target).find('[name=carrier]').val(),
+    var subscription = {
+      email: $(e.target).find('[name=email]').val()      
     }
 
-    Meteor.call('phone', phone, function (error, id) {
+    Meteor.call('subscribe', subscription, function (error, id) {
        if (error) {
           if(error.error === 302) {
             var id = error.details;
@@ -16,7 +15,7 @@ Template.subscribe.events({
           }        
         alert(error.reason);
       } else {
-        Meteor.call('sendEmail', Phones.findOne(id));
+        Meteor.call('sendEmail', Subscriptions.findOne(id));
         Router.go('finished');
       }
     });     

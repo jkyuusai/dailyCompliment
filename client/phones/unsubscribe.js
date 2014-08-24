@@ -6,7 +6,7 @@ Template.unsubscribe.helpers({
 
 Template.unsubscribe.events({
   'click .submit': function(e) {  			
-  		Meteor.call('unsubscribe', Phones.findOne(this._id));
+  		Meteor.call('unsubscribe', Subscriptions.findOne(this._id));
   		Session.set('unsubscribed', true);
   },
   'click .cancel': function(e) {
