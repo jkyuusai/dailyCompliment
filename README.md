@@ -10,3 +10,4 @@ Future Plans
 
 - Handle the unsubscribe path differently. I don't like that it is dependent on an error being thrown. 
 
+[ ![Codeship Status for jkyuusai/dailyCompliment](https://www.codeship.io/projects/e7767fb0-0e1e-0132-708c-6622b841f5fb/status)](https://www.codeship.io/projects/32370)
