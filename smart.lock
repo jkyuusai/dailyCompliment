@@ -6,7 +6,9 @@
       "iron-router": {},
       "spin": {},
       "accounts-ui-bootstrap-3": {},
-      "kadira": {}
+      "kadira": {},
+      "synced-cron": {},
+      "moment": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -33,6 +35,16 @@
         "git": "https://github.com/meteorhacks/kadira.git",
         "tag": "v2.4.13",
         "commit": "1f3c1a427084af5a2eca2e299eb65bc01387df8a"
+      },
+      "synced-cron": {
+        "git": "https://github.com/percolatestudio/meteor-synced-cron.git",
+        "tag": "v0.1.1",
+        "commit": "c731ab04e7bf2b0aa7a7e3c4f4750c8c648b791d"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.8.1",
+        "commit": "722ea63783d594341023836b7d418ab2567dab8c"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",
