@@ -10,3 +10,6 @@ Future Plans
 - Handle the unsubscribe path differently so that it is not dependent on an error being thrown
 - Allow users to specify personal frequency of compliments
 - Make scheduler be more consistent
+
+NOTE:
+Sometimes during peak usage times, Meteor's hosting can be a little unresponive. When visiting the app, if Meteor reports that the site is unavailable, try refreshing the page a few times.
