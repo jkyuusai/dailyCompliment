@@ -4,7 +4,7 @@ Sign up to get a compliment emailed to you once a day! Enter your email address 
 
 Give the app a try [here](http://dailycompliment.meteor.com/)
 
-*Sometimes during peak usage times, Meteor's hosting can be a little unresponive. When visiting the app, if Meteor reports that the site is unavailable, try refreshing the page a few times.*
+*Sometimes during peak usage times, Meteor's hosting can be a little unresponive. If Meteor reports that the site is unavailable, try refreshing the page.*
 
 
 This app is built using the [Meteor](http://www.meteor.com) framework.
