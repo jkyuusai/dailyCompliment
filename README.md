@@ -4,9 +4,10 @@ Sign up to get a compliment emailed to you once a day! Enter your email address 
 
 Give the app a try [here](http://dailycompliment.meteor.com/)
 
-This app is built using the [Meteor](http://www.meteor.com) framework.
-
 *Sometimes during peak usage times, Meteor's hosting can be a little unresponive. When visiting the app, if Meteor reports that the site is unavailable, try refreshing the page a few times.*
+
+
+This app is built using the [Meteor](http://www.meteor.com) framework.
 
 Future Plans
 - Have users confirm their registration before setting up a subscription
