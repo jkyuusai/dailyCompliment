@@ -1,5 +1,4 @@
 Meteor.startup(function () {
-	process.env.MAIL_URL = 'smtp://postmaster%40***REMOVED***:***REMOVED***@smtp.mailgun.org:587';
 	SyncedCron.start();
 });
 
@@ -11,7 +10,7 @@ Meteor.methods({
 	sendEmail: function(subscription, subject, body) {	
 		Email.send({
 			to:subscription.email, 
-			from:'dailycompliment@***REMOVED***', 
+			from:'dailycompliment@sparklecow.io', 
 			subject: subject, 
 			html: body
 		});
