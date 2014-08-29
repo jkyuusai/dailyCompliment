@@ -2,7 +2,7 @@ dailyCompliment
 ===============
 Sign up to get a compliment emailed to you once a day! Enter your email address in the subscription form again to unsubscribe at any time. You are automatically unsubscribed after seven days.
 
-See the app in production at: http://cfpb-frontend-dev-dailycompliment.meteor.com/
+See the app in production at: http://dailycompliment.meteor.com/
 
 Future Plans
 - Have users confirm their registration before setting up a subscription
