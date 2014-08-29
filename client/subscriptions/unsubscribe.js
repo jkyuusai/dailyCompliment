@@ -1,16 +1,14 @@
 Template.unsubscribe.helpers({
-	unsubscribed: function () {
-		return Session.equals('unsubscribed', true);
-	}
-});
+  unsubscribe: function () {      
+    Meteor.call('unsubscribe', this.id, function(error, id) {
+      
+      if(error) {
+        Toast.error(error.details);
+      }
 
-Template.unsubscribe.events({
-  'click .submit': function(e) {  			
-  		Meteor.call('unsubscribe', Subscriptions.findOne(this._id));
-  		Session.set('unsubscribed', true);
-  },
-  'click .cancel': function(e) {
-  		Router.go('subscribe');
+      Toast.success("You've been unsubscribed from the Daily Compliment!");
+      Router.go('subscribe');
+    });    
   }
 });
   		

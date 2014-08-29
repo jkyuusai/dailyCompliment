@@ -3,6 +3,10 @@ Meteor.startup(function () {
 	SyncedCron.start();
 });
 
+Meteor.publish('subscriptions', function(id) {
+	return Subscriptions.find({_id:id});
+});
+
 Meteor.methods({
 	sendEmail: function(subscription, subject, body) {	
 		Email.send({
@@ -11,8 +15,24 @@ Meteor.methods({
 			subject: subject, text: body
 		});
 	},
-	unsubscribe: function(subscription) {			
-		Subscriptions.remove(subscription._id);
+	unsubscribe: function(id) {			
+		Subscriptions.remove(id);
+	},
+
+	sendComplimentEmail: function(id) {
+		var subscription = Subscriptions.findOne(id);
+		Meteor.call('draw', function(error, compliments) {       
+        	Meteor.call('sendEmail', 
+        		subscription, 
+        		'Daily Compliment', 
+        		'You are ' + compliments[0].word.toLowerCase() + ' and ' + compliments[1].word.toLowerCase() +'.\n\n' + 'Click here to unsubscribe: ' + Router.routes['unsubscribe'].url({_id:subscription._id})
+        	);
+	    });
+	},
+
+	sendRegistrationConfirmationEmail: function(id) {
+		var subscription = Subscriptions.findOne(id);			
+		Meteor.call('sendEmail', subscription,'Please Confirm your Registration to the Daily Compliment', 'Please click the link below to confirm your registration for the Daily Compliment.\n' + Router.routes['confirmRegistration'].url({_id:subscription._id}));
 	}
 });
 
@@ -22,10 +42,8 @@ SyncedCron.add({
 		return parser.recur().on('12:00:00').time();
 	},
 	job: function() {
-		Subscriptions.find().forEach(function (sub) {
-			Meteor.call('draw', function(error, compliments) {       
-	            Meteor.call('sendEmail', sub,'Daily Compliment', 'You are ' + compliments[0].word.toLowerCase() + ' and ' + compliments[1].word.toLowerCase() +'.');
-	        });
+		Subscriptions.find({confirmed:true}).forEach(function (subscription) {
+			Meteor.call('sendComplimentEmail', subscription);
 		});
 		 
 	}

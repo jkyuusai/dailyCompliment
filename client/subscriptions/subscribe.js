@@ -1,5 +1,5 @@
 Template.subscribe.events({
-  'submit form': function(e) {
+  'submit': function(e) {
     e.preventDefault();
     Session.set('unsubscribed', false);
     var subscription = {
@@ -7,21 +7,16 @@ Template.subscribe.events({
     }
 
     Meteor.call('subscribe', subscription, function (error, id) {
-       if (error) {
-          if(error.error === 302) {
-            var id = error.details;
-            Router.go('unsubscribe', {_id: id});
-            return;
-          }        
+      if (error) {
+        if(error.error === 302) {
+          Toast.error('This address already has an active subscription!')
+          return;
+        }        
         alert(error.reason);
-      } else {
-        var sub = Subscriptions.findOne(id);
-        Meteor.call('sendEmail', sub,'Daily Compliment Registration', 'You have been registered for the Daily Compliment. You will receive your first compliment shortly.');
-        Meteor.call('draw', function(error, compliments) {       
-              Meteor.call('sendEmail', sub,'Daily Compliment', 'You are ' + compliments[0].word.toLowerCase() + ' and ' + compliments[1].word.toLowerCase() +'.');
-          });
-        Router.go('finished');
+      } else {                
+        Meteor.call('sendRegistrationConfirmationEmail', id);       
+        Toast.success('Registration confirmation sent! Please check your email.','',{displayDuration:0})
       }
-    });     
+    });
   }
 });
