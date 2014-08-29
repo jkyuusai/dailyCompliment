@@ -2,7 +2,11 @@ dailyCompliment
 ===============
 Sign up to get a compliment emailed to you once a day! Enter your email address in the subscription form again to unsubscribe at any time. You are automatically unsubscribed after seven days.
 
-See the app in production at: http://dailycompliment.meteor.com/
+Give the app a try [here](http://dailycompliment.meteor.com/)
+
+This app is built using the [Meteor](http://www.meteor.com) framework.
+
+*Sometimes during peak usage times, Meteor's hosting can be a little unresponive. When visiting the app, if Meteor reports that the site is unavailable, try refreshing the page a few times.*
 
 Future Plans
 - Have users confirm their registration before setting up a subscription
@@ -11,5 +15,4 @@ Future Plans
 - Allow users to specify personal frequency of compliments
 - Make scheduler be more consistent
 
-NOTE:
-Sometimes during peak usage times, Meteor's hosting can be a little unresponive. When visiting the app, if Meteor reports that the site is unavailable, try refreshing the page a few times.
+
