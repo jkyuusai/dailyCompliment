@@ -1973,9 +1973,7 @@ if(Compliments.find().count() === 0) {
 	];
 }
 
-_.each(compliments, function(e) {	
-	console.log('doing an insert');
-
+_.each(compliments, function(e) {
 		Compliments.insert({
 			word: e,
 			submitted: new Date().getTime(),
