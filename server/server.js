@@ -12,7 +12,8 @@ Meteor.methods({
 		Email.send({
 			to:subscription.email, 
 			from:'dailycompliment@***REMOVED***', 
-			subject: subject, text: body
+			subject: subject, 
+			html: body
 		});
 	},
 	unsubscribe: function(id) {			
@@ -25,14 +26,14 @@ Meteor.methods({
         	Meteor.call('sendEmail', 
         		subscription, 
         		'Daily Compliment', 
-        		'You are ' + compliments[0].word.toLowerCase() + ' and ' + compliments[1].word.toLowerCase() +'.\n\n' + 'Click here to unsubscribe: ' + Router.routes['unsubscribe'].url({_id:subscription._id})
+        		'You are ' + compliments[0].word.toLowerCase() + ' and ' + compliments[1].word.toLowerCase() +'.\n\n' + '<a href="' + Router.routes['unsubscribe'].url({_id:subscription._id}) + '">Unsubscribe</a>'
         	);
 	    });
 	},
 
 	sendRegistrationConfirmationEmail: function(id) {
 		var subscription = Subscriptions.findOne(id);			
-		Meteor.call('sendEmail', subscription,'Please Confirm your Registration to the Daily Compliment', 'Please click the link below to confirm your registration for the Daily Compliment.\n' + Router.routes['confirmRegistration'].url({_id:subscription._id}));
+		Meteor.call('sendEmail', subscription,'Please Confirm your Registration to the Daily Compliment', 'Please click the link below to confirm your registration for the Daily Compliment.\n\n' + Router.routes['confirmRegistration'].url({_id:subscription._id}));
 	}
 });
 
