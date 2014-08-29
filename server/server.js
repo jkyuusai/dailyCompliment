@@ -1,5 +1,4 @@
 Meteor.startup(function () {
-	process.env.MAIL_URL = 'smtp://postmaster%40***REMOVED***:***REMOVED***@smtp.mailgun.org:587';
 	SyncedCron.start();
 });
 
