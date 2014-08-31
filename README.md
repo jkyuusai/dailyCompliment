@@ -10,10 +10,8 @@ Give the app a try [here](http://dailycompliment.meteor.com/)
 It's built using the [Meteor](http://www.meteor.com) framework.
 
 Future Plans
-- Have users confirm their registration before setting up a subscription
-- Highlight the unsubscribe path better
-- Handle the unsubscribe path differently so that it is not dependent on an error being thrown
 - Allow users to specify personal frequency of compliments
 - Make scheduler be more consistent
+- Notify users via email if they are auto-unsubscribed
 
 
