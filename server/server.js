@@ -1,4 +1,5 @@
-Meteor.startup(function () {
+Meteor.startup(function () {		
+	process.env.MAIL_URL = 'smtp://' + smtpKey + '@smtp.mailgun.org:587';
 	SyncedCron.start();
 });
 
