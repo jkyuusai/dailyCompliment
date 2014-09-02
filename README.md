@@ -6,9 +6,4 @@ Give the app a try [here](http://dailycompliment.meteor.com/). It's built using 
 
 *Sometimes during peak usage times, Meteor's hosting can be a little unresponive. If Meteor reports that the site is unavailable, try refreshing the page.*
 
-Future Plans
-- Allow users to specify personal frequency of compliments
-- Make scheduler be more consistent
-- Notify users via email if they are auto-unsubscribed
-
 
