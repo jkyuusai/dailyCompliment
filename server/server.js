@@ -8,7 +8,7 @@ Meteor.publish('subscriptions', function(id) {
 });
 
 Meteor.methods({
-	sendEmail: function(subscription, subject, body) {	
+	sendEmail: function(subscription, subject, body) {
 		Email.send({
 			to:subscription.email, 
 			from:'dailycompliment@sparklecow.io', 
@@ -16,13 +16,10 @@ Meteor.methods({
 			html: body
 		});
 	},
-	unsubscribe: function(id) {			
-		Subscriptions.remove(id);
-	},
-
+	
 	sendComplimentEmail: function(id) {
 		var subscription = Subscriptions.findOne(id);
-		Meteor.call('draw', function(error, compliments) {       
+		Meteor.call('draw', function(error, compliments) {
         	Meteor.call('sendEmail', 
         		subscription, 
         		'Daily Compliment', 
@@ -32,8 +29,16 @@ Meteor.methods({
 	},
 
 	sendRegistrationConfirmationEmail: function(id) {
-		var subscription = Subscriptions.findOne(id);			
+		var subscription = Subscriptions.findOne(id);
 		Meteor.call('sendEmail', subscription,'Please Confirm your Registration to the Daily Compliment', 'Please click the link below to confirm your registration for the Daily Compliment.\n\n' + Router.routes['confirmRegistration'].url({_id:subscription._id}));
+	},
+
+	sendAutoUnsubscribedNotificationEmail: function(subscription) {
+		Meteor.call('sendEmail', subscription,'Daily Compliment Subscription Notification','You have been automatically unsubscribed from the Daily Compliment');
+	},
+
+	unsubscribe: function(id) {
+		Subscriptions.remove(id);
 	}
 });
 
@@ -57,8 +62,9 @@ SyncedCron.add({
 	},
 	job: function() {
 		Subscriptions.find().forEach(function (sub) {
-			if(moment(sub.submitted).days() >= 7) {
+			if(moment().diff(sub.submitted, 'days') >= 7) {
 				Meteor.call('unsubscribe', sub);
+				Meteor.call('sendAutoUnsubscribedNotificationEmail', sub);
 			}
 		});
 		 
