@@ -1,4 +1,4 @@
-Subscriptions = new Meteor.Collection('subscriptions');
+Subscriptions = new Mongo.Collection('subscriptions');
 
 Subscriptions.allow({
   update: function(userId, doc) {

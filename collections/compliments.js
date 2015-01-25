@@ -1,4 +1,4 @@
-Compliments = new Meteor.Collection('compliments');
+Compliments = new Mongo.Collection('compliments');
 
 
 
