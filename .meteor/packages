@@ -10,8 +10,8 @@ mrt:accounts-ui-bootstrap-3
 mrt:moment
 percolatestudio:synced-cron
 accounts-password
-mizzao:bootstrap-3
 meteorhacks:kadira
 mrt:toastjs
 iron:router
 
+twbs:bootstrap
